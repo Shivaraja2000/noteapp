@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note App</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Shivaraja Note </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">Note App</h1>
         <div class="card">
             <div class="card-body">
-                <form id="noteForm">
-                    <div class="form-group">
-                        <textarea class="form-control" id="noteInput" rows="3" placeholder="Enter your note here..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Add Note</button>
-                </form>
+                <h5 class="card-title text-center fw-bold fs-1">Sticky Note </h5>
+                <div class="input-group mb-3">
+                    <input type="text" id="noteInput" class="form-control" placeholder="Enter your note...">
+                    <button id="addButton" class="btn btn-primary">Add Note</button>
+                </div>
+                <div id="noteList" class="note-list"></div>
             </div>
         </div>
-        <div class="mt-4 note-list" id="notesList"></div>
     </div>
 
     <script src="script.js"></script>
